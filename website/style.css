@@ -1,0 +1,173 @@
+@font-face {
+    font-family: UmbaSans;
+    src: url(UmbaSans-Light.ttf);
+ }
+ @font-face {
+    font-family: UmbaSans;
+    src: url(UmbaSans-Bold.ttf);
+    font-weight: bold;
+ }
+ 
+body{
+    background: #3b4a6b;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+#app{
+    background: #eb6e4b;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'UmbaSans';
+    width: 30%;
+}
+#result{
+    color: #ffffff;
+    font-family: 'UmbaSans', sans-serif; 
+    width: 70%; 
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.split{
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+.hide{
+    display: none;
+}
+#avatar{
+    position: fixed;
+    bottom: 0;
+    left: 59%;
+    margin-right: 50%;
+}
+.waiting{
+    padding-top: 110px;
+}
+.right{
+    right: 1%;
+    bottom: 3%;
+    top: 8%;
+}
+.left{
+    left: 1%;
+    bottom: 3%;
+    top: 3%;
+}
+.show{
+    display: block;
+}
+.holder{
+    padding: 30px;
+}
+
+#date{
+    font-size: 25px;
+}
+
+#temp{
+    font-size: 25px;
+}
+
+#content{
+    font-size: 25px;
+}
+#desc{
+    font-size: 25px;
+}
+#error{
+    font-size: 25px;
+}
+#beforeResults{
+    position: relative;
+}
+.headline {
+margin: auto;
+font-size: 30px;
+}
+/*  Basic Styling To Override Default For Basic HTML Elements */
+input{
+    display: block;
+    height: 60px;
+    width: 320px;
+    max-width: 100%;
+    margin: auto;
+    background:#eb6e4b;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'UmbaSans', sans-serif;
+    text-align: center;
+    border: solid;
+    border-color: #3b4a6b;
+    border-width: 1.5px;
+    
+}
+button{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 70px;
+    background: #3b4a6b;
+    color: #ffffff;
+    font-size: 26px;
+    font-family: 'UmbaSans', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#eb6e4b;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'UmbaSans', sans-serif;
+    text-align: center;
+    margin: auto;
+    border: solid;
+    border-color: #3b4a6b;
+    border-width: 1.5px;
+    max-width: 100%; 
+    max-height: 100%;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #ffffff; 
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #ffffff; 
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #ffffff; 
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+} 
+input:focus::placeholder {
+    color: transparent;
+}
+textarea:focus::placeholder {
+    color: transparent;
+}
